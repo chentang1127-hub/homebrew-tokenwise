@@ -8,14 +8,14 @@ class Tokenwise < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/chentang1127-hub/tokenwise/releases/download/v#{version}/tokenwise-macos-arm64.tar.gz"
-      sha256 "PLACEHOLDER_macos_arm64"
+      sha256 "e92a57e68d98a68938286652a16008bec82cd5c4e0cd33fb7daf498c8ed91947"
     else
       url "https://github.com/chentang1127-hub/tokenwise/releases/download/v#{version}/tokenwise-macos-amd64.tar.gz"
-      sha256 "PLACEHOLDER_macos_amd64"
+      sha256 "c11a4d5e9e52337f96264a53042d0a5669081348fa0052c616e5b7bf09a5d079"
     end
   elsif OS.linux?
     url "https://github.com/chentang1127-hub/tokenwise/releases/download/v#{version}/tokenwise-linux-amd64.tar.gz"
-    sha256 "PLACEHOLDER_linux_amd64"
+    sha256 "6bbb8061aeb82273fa63cf15735813d541918daf5ec301d28cc485ee300af556"
   end
 
   def install
