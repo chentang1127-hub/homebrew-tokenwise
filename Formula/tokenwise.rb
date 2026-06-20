@@ -1,21 +1,21 @@
 class Tokenwise < Formula
   desc "Save 70-90% on AI API costs with smart model routing"
   homepage "https://github.com/chentang1127-hub/tokenwise"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   # Multi-architecture support — one binary per platform
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/chentang1127-hub/tokenwise/releases/download/v#{version}/tokenwise-macos-arm64.tar.gz"
-      sha256 "e92a57e68d98a68938286652a16008bec82cd5c4e0cd33fb7daf498c8ed91947"
+      sha256 "8e511b230d335a38cc0be05ffcebbd4bea0d92b580b0a5b1aa10d29d156898ed"
     else
       url "https://github.com/chentang1127-hub/tokenwise/releases/download/v#{version}/tokenwise-macos-amd64.tar.gz"
-      sha256 "c11a4d5e9e52337f96264a53042d0a5669081348fa0052c616e5b7bf09a5d079"
+      sha256 "456d5bb2b5f69f1fa5ca3476a8a51d4c8030ea36b95548493bb8d17d2326ff2a"
     end
   elsif OS.linux?
     url "https://github.com/chentang1127-hub/tokenwise/releases/download/v#{version}/tokenwise-linux-amd64.tar.gz"
-    sha256 "6bbb8061aeb82273fa63cf15735813d541918daf5ec301d28cc485ee300af556"
+    sha256 "ae188d040b787c0c374f6b892423bb85874d5e8e6eed2f506735cdfa5b8b78c2"
   end
 
   def install
